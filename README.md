@@ -8,3 +8,4 @@
 3. [VS Code](https://code.visualstudio.com/download)
 4. [GIT CLI](https://git-scm.com/downloads)
 
+### Steps
