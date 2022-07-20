@@ -9,6 +9,6 @@
 4. [GIT CLI](https://git-scm.com/downloads)
 
 ### Steps
-1. git add . 
-2. git commit -m "message"
-3. git push origin main
+1. ` git add ` 
+2. ` git commit -m "message" `
+3. ` git push origin main `
