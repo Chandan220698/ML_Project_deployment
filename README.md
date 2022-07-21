@@ -20,7 +20,7 @@
 `conda create -p <env_name> python==3.7 -y` -p to create venv in project folder itself
 2. Activate venv
 `conda activate <env_name>/`
-OR
+or
 `conda activate <env_name>`
 3. Creating requirement.txt file
 `pip freeze > requirements.txt`
@@ -33,10 +33,10 @@ OR
 3. HEROKU_APP_NAME: ml-deployment-project-ck
 
 ### BUILD DOCKER IMAGE
-`docker build -t <image_name>:<tag_name> .`
+1. `docker build -t <image_name>:<tag_name> .`
 > image_name should be in lower case and tag_name generally use 'latest'
 2. `docker images` To list Docker Image and get IMAGE_ID
-3. RUN DOCKER IMAGE
+3. Run Docker Image
    `docker run -p 5000:5000 -e PORT=5000 <IMAGE_ID>`
 4. `docker ps` To check running container in docker
 5. `docker stop <container_id>` to stop docker container 
