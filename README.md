@@ -11,7 +11,7 @@
 ### Steps
 1. `git status`
 2. `git add` 
-3. `git commit -m "message"`
+3. `git commit -m "message"` Git commit create the version and push will push this changes to github
 4. `git push origin main` This origin actually is the repo link
 5. `git remote -v` To check repo link 
 
@@ -26,3 +26,17 @@ OR
 `pip freeze > requirements.txt`
 4. To install requirements.txt
 `pip install -r requirements.txt`
+
+### To setpup CI/CD pipeline in heroku we need following information
+1. HEROKU_EMAIL: kumarchndan07@gmail.com
+2. HEROKU_API_KEY: 619b9cb9-db8d-4bb6-bfd7-5d0c91acde39
+3. HEROKU_APP_NAME: ml-deployment-project-ck
+
+### BUILD DOCKER IMAGE
+`docker build -t <image_name>:<tag_name> .`
+> image_name should be in lower case and tag_name generally use 'latest'
+2. `docker images` To list Docker Image and get IMAGE_ID
+3. RUN DOCKER IMAGE
+   `docker run -p 5000:5000 -e PORT=5000 <IMAGE_ID>`
+4. `docker ps` To check running container in docker
+5. `docker stop <container_id>` to stop docker container 
