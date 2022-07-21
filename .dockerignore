@@ -1,3 +1,4 @@
 deploy_env/
 .git
 .gitignore
+.deploy_env
