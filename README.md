@@ -12,3 +12,25 @@
 1. ` git add ` 
 2. ` git commit -m "message" `
 3. ` git push origin main `
+
+### 
+Creating conda virtual env
+```
+conda create -p <env_name> python==3.7 -y  (-p to create venv in project folder itself)
+```
+Activate venv
+```
+conda activate <env_name>/
+```
+OR
+```
+conda activate <env_name>
+```
+Creating requirement.txt file
+```
+pip freeze > requirements.txt
+```
+To install requirements.txt
+```
+pip install -r requirements.txt
+```
