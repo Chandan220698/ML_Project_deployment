@@ -29,7 +29,7 @@ or
 
 ### To setpup CI/CD pipeline in heroku we need following information
 1. HEROKU_EMAIL: kumarchndan07@gmail.com
-2. HEROKU_API_KEY: 619b9cb9-db8d-4bb6-bfd7-5d0c91acde39
+2. HEROKU_API_KEY: <API_KEY>
 3. HEROKU_APP_NAME: ml-deployment-project-ck
 
 ### BUILD DOCKER IMAGE
