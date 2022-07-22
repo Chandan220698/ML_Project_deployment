@@ -1,10 +1,10 @@
 from distutils.command.install_data import install_data
-from setuptools import setup
+from setuptools import setup, find_packages
 from typing import List
 
 # Declaring variables for setup function
 PROJECT_NAME = 'housing-predictor'
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 AUTHOR = 'Chandan Kumar'
 DESCRIPTION = "ML Project Deployment Process"
 REQUIREMENT_FILE_NAME = 'requirements.txt'
@@ -14,7 +14,7 @@ def get_requirements_list()->List[str]:
     Function will return list of requirements mentioned in the requirements.txt
     '''
     with open(REQUIREMENT_FILE_NAME) as req_file:
-        return req_file.readlines()
+        return req_file.readlines().pop('-e .')
 
 
 setup(
@@ -22,7 +22,7 @@ setup(
     version = VERSION,
     author = AUTHOR,
     description = DESCRIPTION,
-    packages = ["housing"],
+    packages = find_packages(),
     install_requires = get_requirements_list()
 )
 
