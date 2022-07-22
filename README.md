@@ -43,4 +43,4 @@ or
 
 
 ## Notes
-> If adding '-e .' then we must have setup.py file in root directory. This will create <custom_pkg_name>-egg.info file for every package which contains "/_/_init/_/_.py" file
+> If adding '-e .' then we must have setup.py file in root directory. This will create <custom_pkg_name>-egg.info file for every package which contains "__init__.py" file
