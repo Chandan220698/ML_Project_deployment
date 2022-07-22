@@ -40,3 +40,7 @@ or
    `docker run -p 5000:5000 -e PORT=5000 <IMAGE_ID>`
 4. `docker ps` To check running container in docker
 5. `docker stop <container_id>` to stop docker container 
+
+
+## Notes
+> If adding '-e .' then we must have setup.py file in root directory. This will create <custom_pkg_name>-egg.info file for every package which contains "__init__.py" file
