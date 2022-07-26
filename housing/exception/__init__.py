@@ -1,7 +1,7 @@
 import os
 import sys
 
-class HousingException(Exception):
+class HousingException(Exception):  ## Inheritence of Exception class
     
     def __init__(self, error_message:Exception, error_detail:sys) -> None:
         super().__init__(error_message)   ## error message to __init__ of super class i.e. Exception class 
