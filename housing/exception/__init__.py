@@ -17,7 +17,7 @@ class HousingException(Exception):  ## Inheritence of Exception class
         '''
         _,_ ,exec_tb = error_detail.exc_info()
 
-        line_number = exec_tb.tb_frame.f_lineno
+        line_number = exec_tb.tb_lineno
         file_name = exec_tb.tb_frame.f_code.co_filename
 
         error_message = f"Error occured in scrip: [{file_name}] at line no [{line_number}] error message: [{error_message}]"
